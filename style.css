@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8d8dd;
+}
+.container {
+    width: 65vw;
+    box-shadow: 3px 3px 10px grey;
+    padding: 2em;
+    background-color: white;
+    border-radius: 5px;
+}
+.form-group {
+    margin-bottom: 1em;
+    transition: all .3s;
+}
+.form-label {
+    font-size: 1em;
+    color: #aaa;
+    display: block;
+    opacity: 1;
+    transform: translateY(-1.25em);
+    transform-origin: 0 0;
+    transition: all .3s;
+}
+.form-control {
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, .02);
+    border-radius: 0;
+    outline: none;
+    border-color: #ccc;
+    border-style: none none solid none;
+    width: 100%;
+    transition: all .5s;
+    padding: 5px;
+
+}
+.form-control::placeholder {
+    color: transparent;
+}
+.form-control:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: orange;
+}
+.form-control:focus + .form-label,
+.form-control:not(:placeholder-shown) + .form-label {
+    transform: translateY(-2.5em) scale(.8);
+}
+.form-group:focus-within{
+    transform: scale(1.05, 1.05);
+}
+
+
+
+
+
+
+
+
+
